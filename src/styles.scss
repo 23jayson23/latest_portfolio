@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+    .btn-primary {
+        @apply bg-[#fbaf03] w-full p-3 rounded text-[#ffff];
+    }
+}
+
+p{
+    font-size: 12px;
+}
+strong{
+    font-size:15px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Poppins', sans-serif; }
