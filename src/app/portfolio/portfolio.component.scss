@@ -73,6 +73,11 @@
     padding:10px;
     justify-content: center;
     align-items: center;
-    gap:10px;   
+    gap:20px;   
     
+  }
+  li:hover{
+    transition: 0.1s ease-in-out;
+    color:#fbaf03;
+    font-weight: 800;
   }
