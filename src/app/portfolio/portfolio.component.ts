@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
+import * as AOS from "aos";
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
@@ -11,6 +11,7 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
 }
