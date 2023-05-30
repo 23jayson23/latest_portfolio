@@ -45,17 +45,37 @@ strong{
         color:#ffff;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 0.5px;
+    }
+    
+    ul li a{
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        padding: 5px;
+    
+    }
+    li a:after{
+        bottom: 0;
+        content: "";
+        height: 3px;
+        left: 50%;
+        position: absolute;
+        background-color: #00FFDD;
+        transition:  0.25s;
+        width: 0;
+    }
+    li a:hover:after { 
+        width: 100%; 
+        left: 0; 
+    }
+    li:hover{
+        transition: 0.9s ease-in-out;
+        color:#00FFDD; 
       }
+
 }
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
-}
-.cursor{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    border-radius: 50%;
-    border: solid 1px white;
 }
 html, body {
     height: 100%; 
