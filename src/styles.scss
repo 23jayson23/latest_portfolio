@@ -6,17 +6,61 @@
         @apply bg-[#fbaf03] w-full p-3 rounded text-[#ffff];
     }
 }
+@font-face {
+    font-family: 'nasalization';
+    src: url(assets/fonts/nasalization-rg.woff);
+}
+.nasalization{
+    font-family: 'nasalization', sans-serif;
+}
 
 p{
-    font-size: 12px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
 strong{
-    font-size:15px;
+    font-size:20px;
 }
-
+#home{
+    background-image: url(assets/images/bg_light.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.dark-theme{
+    background-color: #202124;
+    color:#fff;
+    #home{
+        background-image: url(assets/images/bg_dark.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    .outline_text{
+        transition: 0.5s ease-in-out;
+        transform: translateX(-100  px);
+        cursor: pointer;
+        color:#ffff;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0.5px;
+      }
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.cursor{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    border: solid 1px white;
+}
 html, body {
     height: 100%; 
     scroll-behavior: smooth;
+    
 }
-body { margin: 0; font-family: 'Poppins', sans-serif; }
+body { margin: 0; font-family: 'nasalization', sans-serif; }
 

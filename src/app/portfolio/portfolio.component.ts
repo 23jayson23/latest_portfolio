@@ -9,9 +9,16 @@ import * as AOS from "aos";
 export class PortfolioComponent implements OnInit {
 
   constructor() { }
-
+  cursor:any;
   ngOnInit(): void {
     AOS.init();
+    this.auto_cursor
   }
 
+  night(){
+      document.documentElement.classList.toggle('dark-theme')
+  }
+  auto_cursor(e:any){
+    this.cursor.setAttribute("style", "top:"+(e.pageY - 10)+"px; left:"+(e.pageX - 10)+"px;") 
+  }
 }
