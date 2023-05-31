@@ -59,48 +59,6 @@
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-  ul li a{
-    text-align: center;
-    text-decoration: none;
-    position: relative;
-    padding: 5px;
-   
-}
-  li a:after{
-    bottom: 0;
-  	content: "";
-  	height: 3px;
-  	left: 50%;
-    position: absolute;
-  	transition:  0.25s;
-  	width: 0;
-}
-li a:hover:after { 
-    width: 100%; 
-    left: 0; 
-}
-  .navbar{
-    padding:20px;
-    display:flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    justify-content: center;
-  }
-  ul{
-    position: relative;
-    list-style: none;
-    display:flex;
-    width: 100%;
-    padding:10px;
-    justify-content: center;
-    align-items: center;
-    gap:20px;   
-    
-  }
-  li:hover{
-    transition: 0.9s ease-in-out;
-  }
-  
   button {
     position: relative;
     display: inline-block;
