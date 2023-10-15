@@ -7,7 +7,7 @@ import * as AOS from "aos";
   
 })
 export class PortfolioComponent implements OnInit {
-  hide = false
+
   constructor() { }
   cursor:any;
   ngOnInit(): void {
@@ -21,7 +21,5 @@ export class PortfolioComponent implements OnInit {
   auto_cursor(e:any){
     this.cursor.setAttribute("style", "top:"+(e.pageY - 10)+"px; left:"+(e.pageX - 10)+"px;") 
   }
-  open(){
-    this.hide = true
-  }
+  
 }
